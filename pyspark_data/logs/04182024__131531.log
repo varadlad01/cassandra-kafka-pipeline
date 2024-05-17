@@ -1,0 +1,4 @@
+[ 2024-04-18 13:15:46,497 ] 100 root - INFO - employee has columns: [['emp_id', 'city', 'emp_name', 'state', 'write_ts']]
+[ 2024-04-18 13:15:46,498 ] 101 root - INFO - 31 rows found in table: ineuron.employee
+[ 2024-04-18 13:15:46,499 ] 75 root - INFO - Started writing data to kafka topic employee and server: kafka:9092
+[ 2024-04-18 13:15:49,652 ] 85 root - INFO - Data has been written to kafka topic: employee

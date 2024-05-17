@@ -1,0 +1,15 @@
+[ 2024-04-20 00:55:53,610 ] 2270 py4j.java_gateway - INFO - Callback Server Starting
+[ 2024-04-20 00:55:53,611 ] 2272 py4j.java_gateway - INFO - Socket listening on ('127.0.0.1', 43677)
+[ 2024-04-20 00:56:01,228 ] 525 py4j.clientserver - INFO - Python Server ready to receive messages
+[ 2024-04-20 00:56:01,229 ] 539 py4j.clientserver - INFO - Received command c on object id p0
+[ 2024-04-20 00:56:01,756 ] 585 py4j.clientserver - ERROR - There was an exception while executing the Python Proxy on the Python Side.
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.8/dist-packages/pyspark/python/lib/py4j-0.10.9.3-src.zip/py4j/clientserver.py", line 581, in _call_proxy
+    return_value = getattr(self.pool[obj_id], method)(*params)
+  File "/usr/local/lib/python3.8/dist-packages/pyspark/python/lib/pyspark.zip/pyspark/sql/utils.py", line 196, in call
+    raise e
+  File "/usr/local/lib/python3.8/dist-packages/pyspark/python/lib/pyspark.zip/pyspark/sql/utils.py", line 193, in call
+    self.func(DataFrame(jdf, self.sql_ctx), batch_id)
+  File "/project/consumer.py", line 71, in processEachInterval
+    df_ordered = df.orderBy(F.col("write_ts").desc()).limit(10)
+NameError: name 'F' is not defined

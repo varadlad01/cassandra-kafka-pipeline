@@ -1,0 +1,3 @@
+[ 2024-04-18 19:12:11,974 ] 106 root - INFO - employee has columns: [['emp_id', 'city', 'emp_name', 'state', 'write_ts', 'prev_ts']]
+[ 2024-04-18 19:12:11,975 ] 107 root - INFO - 0 rows found in table: ineuron.employee
+[ 2024-04-18 19:12:11,975 ] 110 root - INFO - No data found hence data will not be written to kafka topic

@@ -1,0 +1,3 @@
+[ 2024-04-18 08:58:13,726 ] 89 root - INFO - employee has columns: [['emp_id', 'city', 'emp_name', 'state', 'curr_timestamp']]
+[ 2024-04-18 08:58:13,726 ] 90 root - INFO - 31 rows found in table: ineuron.employee
+[ 2024-04-18 08:58:13,727 ] 65 root - INFO - Started writing data to kafka topic employee and server: kafka:9092

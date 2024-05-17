@@ -1,0 +1,3 @@
+[ 2024-04-18 19:14:25,256 ] 106 root - INFO - employee has columns: [['prev_ts']]
+[ 2024-04-18 19:14:25,269 ] 107 root - INFO - 1 rows found in table: ineuron.employee
+[ 2024-04-18 19:14:25,271 ] 81 root - INFO - Started writing data to kafka topic employee and server: kafka:9092

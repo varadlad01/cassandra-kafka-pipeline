@@ -1,0 +1,21 @@
+[ 2024-04-20 00:57:04,345 ] 2270 py4j.java_gateway - INFO - Callback Server Starting
+[ 2024-04-20 00:57:04,346 ] 2272 py4j.java_gateway - INFO - Socket listening on ('127.0.0.1', 35123)
+[ 2024-04-20 00:57:11,681 ] 525 py4j.clientserver - INFO - Python Server ready to receive messages
+[ 2024-04-20 00:57:11,681 ] 539 py4j.clientserver - INFO - Received command c on object id p0
+[ 2024-04-20 00:57:16,664 ] 585 py4j.clientserver - ERROR - There was an exception while executing the Python Proxy on the Python Side.
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.8/dist-packages/pyspark/python/lib/py4j-0.10.9.3-src.zip/py4j/clientserver.py", line 581, in _call_proxy
+    return_value = getattr(self.pool[obj_id], method)(*params)
+  File "/usr/local/lib/python3.8/dist-packages/pyspark/python/lib/pyspark.zip/pyspark/sql/utils.py", line 196, in call
+    raise e
+  File "/usr/local/lib/python3.8/dist-packages/pyspark/python/lib/pyspark.zip/pyspark/sql/utils.py", line 193, in call
+    self.func(DataFrame(jdf, self.sql_ctx), batch_id)
+  File "/project/consumer.py", line 74, in processEachInterval
+    df_ordered.write.mode("owerwrite").parquet(dataSink)
+  File "/usr/local/lib/python3.8/dist-packages/pyspark/python/lib/pyspark.zip/pyspark/sql/readwriter.py", line 568, in mode
+    self._jwrite = self._jwrite.mode(saveMode)
+  File "/usr/local/lib/python3.8/dist-packages/pyspark/python/lib/py4j-0.10.9.3-src.zip/py4j/java_gateway.py", line 1321, in __call__
+    return_value = get_return_value(
+  File "/usr/local/lib/python3.8/dist-packages/pyspark/python/lib/pyspark.zip/pyspark/sql/utils.py", line 117, in deco
+    raise converted from None
+pyspark.sql.utils.IllegalArgumentException: Unknown save mode: owerwrite. Accepted save modes are 'overwrite', 'append', 'ignore', 'error', 'errorifexists', 'default'.

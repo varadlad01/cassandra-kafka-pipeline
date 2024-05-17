@@ -1,0 +1,12 @@
+[ 2024-04-18 10:31:45,268 ] 91 root - INFO - employee has columns: [['emp_id', 'city', 'emp_name', 'state', 'write_ts']]
+[ 2024-04-18 10:31:45,269 ] 92 root - INFO - 31 rows found in table: ineuron.employee
+[ 2024-04-18 10:31:45,270 ] 66 root - INFO - Started writing data to kafka topic employee and server: kafka:9092
+[ 2024-04-18 10:31:49,081 ] 76 root - INFO - Data has been written to kafka topic: employee
+[ 2024-04-18 10:32:07,044 ] 91 root - INFO - employee has columns: [['emp_id', 'city', 'emp_name', 'state', 'write_ts']]
+[ 2024-04-18 10:32:07,048 ] 92 root - INFO - 31 rows found in table: ineuron.employee
+[ 2024-04-18 10:32:07,050 ] 66 root - INFO - Started writing data to kafka topic employee and server: kafka:9092
+[ 2024-04-18 10:32:10,534 ] 76 root - INFO - Data has been written to kafka topic: employee
+[ 2024-04-18 10:32:27,973 ] 91 root - INFO - employee has columns: [['emp_id', 'city', 'emp_name', 'state', 'write_ts']]
+[ 2024-04-18 10:32:27,977 ] 92 root - INFO - 31 rows found in table: ineuron.employee
+[ 2024-04-18 10:32:27,980 ] 66 root - INFO - Started writing data to kafka topic employee and server: kafka:9092
+[ 2024-04-18 10:32:29,677 ] 76 root - INFO - Data has been written to kafka topic: employee

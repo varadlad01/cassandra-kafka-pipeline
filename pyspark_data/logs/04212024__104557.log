@@ -1,0 +1,68 @@
+[ 2024-04-21 10:46:09,539 ] 2270 py4j.java_gateway - INFO - Callback Server Starting
+[ 2024-04-21 10:46:09,540 ] 2272 py4j.java_gateway - INFO - Socket listening on ('127.0.0.1', 32899)
+[ 2024-04-21 10:46:17,610 ] 525 py4j.clientserver - INFO - Python Server ready to receive messages
+[ 2024-04-21 10:46:17,611 ] 539 py4j.clientserver - INFO - Received command c on object id p0
+[ 2024-04-21 10:46:36,988 ] 502 py4j.clientserver - INFO - Error while receiving.
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.8/dist-packages/pyspark/python/lib/py4j-0.10.9.3-src.zip/py4j/clientserver.py", line 475, in send_command
+    answer = smart_decode(self.stream.readline()[:-1])
+RuntimeError: reentrant call inside <_io.BufferedReader name=4>
+[ 2024-04-21 10:46:36,991 ] 507 py4j.clientserver - INFO - Closing down clientserver connection
+[ 2024-04-21 10:46:36,992 ] 1055 root - ERROR - Exception while sending command.
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.8/dist-packages/pyspark/python/lib/py4j-0.10.9.3-src.zip/py4j/clientserver.py", line 475, in send_command
+    answer = smart_decode(self.stream.readline()[:-1])
+RuntimeError: reentrant call inside <_io.BufferedReader name=4>
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.8/dist-packages/pyspark/python/lib/py4j-0.10.9.3-src.zip/py4j/java_gateway.py", line 1038, in send_command
+    response = connection.send_command(command)
+  File "/usr/local/lib/python3.8/dist-packages/pyspark/python/lib/py4j-0.10.9.3-src.zip/py4j/clientserver.py", line 503, in send_command
+    raise Py4JNetworkError(
+py4j.protocol.Py4JNetworkError: Error while sending or receiving
+[ 2024-04-21 10:46:36,996 ] 502 py4j.clientserver - INFO - Error while receiving.
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.8/dist-packages/pyspark/python/lib/py4j-0.10.9.3-src.zip/py4j/clientserver.py", line 475, in send_command
+    answer = smart_decode(self.stream.readline()[:-1])
+  File "/usr/lib/python3.8/socket.py", line 669, in readinto
+    return self._sock.recv_into(b)
+  File "/usr/local/lib/python3.8/dist-packages/pyspark/python/lib/pyspark.zip/pyspark/context.py", line 292, in signal_handler
+    self.cancelAllJobs()
+  File "/usr/local/lib/python3.8/dist-packages/pyspark/python/lib/pyspark.zip/pyspark/context.py", line 1195, in cancelAllJobs
+    self._jsc.sc().cancelAllJobs()
+  File "/usr/local/lib/python3.8/dist-packages/pyspark/python/lib/py4j-0.10.9.3-src.zip/py4j/java_gateway.py", line 1321, in __call__
+    return_value = get_return_value(
+  File "/usr/local/lib/python3.8/dist-packages/pyspark/python/lib/pyspark.zip/pyspark/sql/utils.py", line 111, in deco
+    return f(*a, **kw)
+  File "/usr/local/lib/python3.8/dist-packages/pyspark/python/lib/py4j-0.10.9.3-src.zip/py4j/protocol.py", line 334, in get_return_value
+    raise Py4JError(
+py4j.protocol.Py4JError: An error occurred while calling o20.sc
+[ 2024-04-21 10:46:37,001 ] 507 py4j.clientserver - INFO - Closing down clientserver connection
+[ 2024-04-21 10:46:37,002 ] 1055 root - ERROR - Exception while sending command.
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.8/dist-packages/pyspark/python/lib/py4j-0.10.9.3-src.zip/py4j/clientserver.py", line 475, in send_command
+    answer = smart_decode(self.stream.readline()[:-1])
+  File "/usr/lib/python3.8/socket.py", line 669, in readinto
+    return self._sock.recv_into(b)
+  File "/usr/local/lib/python3.8/dist-packages/pyspark/python/lib/pyspark.zip/pyspark/context.py", line 292, in signal_handler
+    self.cancelAllJobs()
+  File "/usr/local/lib/python3.8/dist-packages/pyspark/python/lib/pyspark.zip/pyspark/context.py", line 1195, in cancelAllJobs
+    self._jsc.sc().cancelAllJobs()
+  File "/usr/local/lib/python3.8/dist-packages/pyspark/python/lib/py4j-0.10.9.3-src.zip/py4j/java_gateway.py", line 1321, in __call__
+    return_value = get_return_value(
+  File "/usr/local/lib/python3.8/dist-packages/pyspark/python/lib/pyspark.zip/pyspark/sql/utils.py", line 111, in deco
+    return f(*a, **kw)
+  File "/usr/local/lib/python3.8/dist-packages/pyspark/python/lib/py4j-0.10.9.3-src.zip/py4j/protocol.py", line 334, in get_return_value
+    raise Py4JError(
+py4j.protocol.Py4JError: An error occurred while calling o20.sc
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.8/dist-packages/pyspark/python/lib/py4j-0.10.9.3-src.zip/py4j/java_gateway.py", line 1038, in send_command
+    response = connection.send_command(command)
+  File "/usr/local/lib/python3.8/dist-packages/pyspark/python/lib/py4j-0.10.9.3-src.zip/py4j/clientserver.py", line 503, in send_command
+    raise Py4JNetworkError(
+py4j.protocol.Py4JNetworkError: Error while sending or receiving
